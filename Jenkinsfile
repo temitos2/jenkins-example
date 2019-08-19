@@ -12,10 +12,12 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        stage('Deploy') {
+        stage('DeployProduction') {
             steps {
-                echo 'Deploying....'
+                echo 'Deployment Successful'
             }
-        }
+            steps {
+                input 'Does the staging environment looks ok?'
+        }       
     }
 }
