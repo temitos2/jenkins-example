@@ -16,9 +16,6 @@ pipeline {
             steps {
                 echo 'Deployment Successful'
             }
-            steps {
-                input 'Does the staging environment looks ok?'
-            }
         }       
     }
 }
