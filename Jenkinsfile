@@ -18,6 +18,7 @@ pipeline {
             }
             steps {
                 input 'Does the staging environment looks ok?'
+            }
         }       
     }
 }
